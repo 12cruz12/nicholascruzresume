@@ -1,0 +1,221 @@
+/* Main page */
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: white;
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Resume width and placement */
+.resume-header,
+.resume-content {
+  width: 100%;
+  max-width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Header */
+.resume-name {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.contact-information {
+  margin: 0 0 6px;
+}
+
+/* Sections */
+.objective-section,
+.employment-section,
+.education-section {
+  margin-top: 38px;
+}
+
+.objective-section {
+  margin-top: 0;
+}
+
+.section-heading {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.objective-text {
+  margin: 0;
+}
+
+/* Employment */
+.employment-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.employment-item {
+  margin: 7px 0;
+}
+
+/* Education */
+.education-item {
+  margin: 0 0 28px;
+}
+
+.school-name,
+.degree-name,
+.education-date {
+  margin: 0;
+}
+
+.school-name {
+  font-size: 1rem;
+}
+
+/* Links */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  color: blue;
+}
+
+/* Large monitors: desktop PCs, large Windows screens, and large Macs */
+@media (min-width: 1440px) {
+  body {
+    padding: 56px 24px;
+    font-size: 17px;
+  }
+
+  .resume-header,
+  .resume-content {
+    max-width: 820px;
+  }
+}
+
+/* Laptops and desktop computers: Windows PCs, MacBooks, and iMacs */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  body {
+    padding: 48px 24px;
+    font-size: 16px;
+  }
+}
+
+/* Tablets: iPads, Galaxy Tabs, Surface tablets, and similar devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    padding: 36px 28px;
+    font-size: 16px;
+  }
+
+  .resume-header,
+  .resume-content {
+    max-width: 700px;
+  }
+}
+
+/* Large phones and small tablets: iPhone Plus/Max and Galaxy phones */
+@media (min-width: 601px) and (max-width: 768px) {
+  body {
+    padding: 30px 22px;
+    font-size: 15px;
+  }
+
+  .objective-section,
+  .employment-section,
+  .education-section {
+    margin-top: 30px;
+  }
+
+  .objective-section {
+    margin-top: 0;
+  }
+}
+
+/* Phones: iPhones, Galaxy phones, Pixel phones, and similar devices */
+@media (max-width: 600px) {
+  body {
+    padding: 24px 16px;
+    font-size: 15px;
+  }
+
+  .objective-section,
+  .employment-section,
+  .education-section {
+    margin-top: 26px;
+  }
+
+  .objective-section {
+    margin-top: 0;
+  }
+
+  .employment-item {
+    margin: 9px 0;
+  }
+}
+
+/* Small phones: older iPhones, Galaxy Mini sizes, and narrow screens */
+@media (max-width: 400px) {
+  body {
+    padding: 20px 12px;
+    font-size: 14px;
+  }
+
+  .resume-name {
+    font-size: 1.15rem;
+  }
+
+  .section-heading {
+    font-size: 1rem;
+  }
+}
+
+/* Phones and tablets turned sideways */
+@media (max-height: 600px) and (orientation: landscape) {
+  body {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .objective-section,
+  .employment-section,
+  .education-section {
+    margin-top: 22px;
+  }
+
+  .objective-section {
+    margin-top: 0;
+  }
+}
+
+/* Printed resume and PDF export */
+@media print {
+  body {
+    padding: 0;
+    font-size: 11pt;
+    color: black;
+    background: white;
+  }
+
+  .resume-header,
+  .resume-content {
+    max-width: none;
+  }
+
+  a,
+  a:hover,
+  a:focus,
+  a:active,
+  a:visited {
+    color: black;
+  }
+}
